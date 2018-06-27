@@ -1,7 +1,7 @@
 import express from 'express';
 
 /*import all routes that will be used here*/
-// import paths from '../paths';
+import paths from '../utils/paths';
 
 /*make main router for v1 api*/
 var watcher_V1_Router = express.Router();
