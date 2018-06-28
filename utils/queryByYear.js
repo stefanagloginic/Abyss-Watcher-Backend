@@ -6,9 +6,6 @@ import paths from './paths'
 var collectionName = process.argv[2];
 var year = parseInt(process.argv[3]);
 
-console.log(year);
-
-
 async function main(){
 // obtain and try to insert the file
 try {

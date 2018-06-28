@@ -1,4 +1,21 @@
 {
 	"testing" : "123",
-	"this_is_a_test" : "is it working?"
+	"this_is_a_test" : "is it working?",
+	"natural_disasters" : {
+		"random_ob" : "rand",
+		"features" : [
+			{
+				"some_stupid_thing" : "stupid_stupid", 
+				"some_stupid_thing" : "stupid_stupid"
+			},
+			{
+				"some_stupid_thing" : "stupid_stupid", 
+				"some_stupid_thing" : "stupid_stupid"
+			},
+			{ 
+				"some_stupid_thing" : "stupid_stupid", 
+				"some_stupid_thing" : "stupid_stupid"
+			}
+		]
+	}
 }
