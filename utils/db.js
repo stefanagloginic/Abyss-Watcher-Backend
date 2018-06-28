@@ -5,7 +5,7 @@ class db {
 		this.db = null;
 	}
 
-	connect(connection_string){
+	connect = (connection_string) => {
 		var self = this;
 
 		return new Promise(function(resolve, reject){
@@ -32,7 +32,7 @@ class db {
 		});
 	}
 
-	close(){
+	close = () => {
 		if(this.db){
 			this.db.close()
 			.then(
@@ -45,4 +45,4 @@ class db {
 	}
 }
 
-module.exports = db
+export default db;
