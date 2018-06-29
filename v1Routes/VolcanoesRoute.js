@@ -9,7 +9,7 @@ volcanoesRouter.route('/')
 	.get(
 		async function getTornadoes(req, res, next){
 			try {
-				// http://localhost:8000/abyss-watcher/v1/tornadoes?year=2012
+				// http://localhost:8000/abyss-watcher/v1/volcanoes?year=2012
 				const { year } = req.query;
 
 				var qYear = parseInt(year);
