@@ -28,10 +28,12 @@ tsunamisRouter.route('/')
 				}
 
 				var features = await collection.find(query).toArray();
+				res.status(200);
 				res.json(features);
 			}
 			catch(e) {
 				mclient && mclient.close();
+				res.status(500).send("Internal server error: " + e.message);
 
 				console.log(e);
 				process.exit();
