@@ -38,7 +38,7 @@ try {
 	}
 }
 catch(e) {
-	mclient || mclient.close();
+	mclient && mclient.close();
 
 	console.log(e);
 	process.exit();

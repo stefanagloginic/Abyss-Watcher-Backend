@@ -4,10 +4,10 @@
   "description": "Backend for static JSON files for Abyss-Watcher site",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./npm-debug.log --copy-files && chmod 755 dist/server.js",
-    "start": "node dist/server.js",
-    "insert": "babel ./utils/ --out-dir bin/ && chmod 755 bin/insertData.js && node bin/insertData.js",
-    "query": "babel ./utils/ --out-dir bin/ && chmod 755 bin/queryByYear.js && node bin/queryByYear.js",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./npm-debug.log --copy-files",
+    "start": "npm run build  && chmod 755 dist/server.js && node dist/server.js",
+    "insert": "npm run build  && chmod 755 dist/utils/insertData.js && node dist/utils/insertData.js",
+    "query": "npm run build  && chmod 755 dist/utils/queryByYear.js && node dist/utils/queryByYear.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

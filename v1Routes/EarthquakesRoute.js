@@ -23,7 +23,7 @@ earthquakesRouter.route('/')
 				res.json(features);
 			}
 			catch(e) {
-				mclient || mclient.close();
+				mclient && mclient.close();
 
 				console.log(e);
 				process.exit();
