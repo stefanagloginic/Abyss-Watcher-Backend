@@ -8,7 +8,7 @@
     "start": "npm run build  && chmod 755 dist/server.js && node dist/server.js",
     "insert": "npm run build  && chmod 755 dist/utils/insertData.js && node dist/utils/insertData.js",
     "query": "npm run build  && chmod 755 dist/utils/queryByYear.js && node dist/utils/queryByYear.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "rimraf test/; babel ./api_tests --out-dir test/ && mocha; rimraf test/"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2016": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "mocha": "^5.2.0",
     "rimraf": "^2.6.2"
   }
 }
