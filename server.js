@@ -2,6 +2,7 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import v1Routes from './v1Routes'
 import cors from 'cors'
+import path from 'path'
 
 
 var app = express();
