@@ -8,14 +8,18 @@
     "server": "nodemon --exec \"npm start\"",
     "client": "cd client && npm start",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-	"start": "npm run build && node dist/server.js",
-	"heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "start": "npm run build && node dist/server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
     "insert": "npm run build  && node dist/utils/insertData.js",
     "query": "npm run build  && node dist/utils/queryByYear.js",
     "test": "rimraf test/; babel ./api_tests --out-dir test/ && mocha; rimraf test/"
   },
   "nodemonConfig": {
-    "ignore": ["api_tests/*", "client/*", "dist/*"]
+    "ignore": [
+      "api_tests/*",
+      "client/*",
+      "dist/*"
+    ]
   },
   "engines": {
     "node": "10.5.0",
