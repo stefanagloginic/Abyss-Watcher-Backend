@@ -2,3 +2,31 @@
 .DS_Store
 package-lock.json
 dist/
+
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/client/node_modules
+
+# testing
+/client/coverage
+
+# production
+/client/build
+
+# misc
+/client/.DS_Store
+/client/.env.local
+/client/.env.development.local
+/client/.env.test.local
+/client/.env.production.local
+
+/client/npm-debug.log*
+/client/yarn-debug.log*
+/client/yarn-error.log*
+
+
+/client/data/earthquake_data.json
+/client/data/tsunami.json
+/client/data/volcano.json
+/client/data/volcano_data_2010-2016.json

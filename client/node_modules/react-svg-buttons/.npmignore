@@ -1,9 +1,0 @@
-demo
-demo-build
-src
-dev-server.js
-webpack.config.js
-.publish
-.idea
-.babelrc
-.gitignore
