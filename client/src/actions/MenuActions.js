@@ -67,6 +67,7 @@ export const setYear = (year) => {
 
 export const getEarthquakesByYear = (year) => {
   return async (dispatch) => {
+    /*need to add try catch in order to deal with failed fetch calls*/
     var data = await obtainData(strings.earthquakes_path + year.toString());
     dispatch({
       type: 'SET_EARTHQUAKE_DATA',
@@ -77,6 +78,7 @@ export const getEarthquakesByYear = (year) => {
 
 export const getTsunamisByYear = (year) => {
   return async (dispatch) => {
+    /*need to add try catch in order to deal with failed fetch calls*/
     var data = await obtainData(strings.tsunamis_path + year.toString());
     dispatch({
       type: 'SET_TSUNAMI_DATA',
@@ -87,6 +89,7 @@ export const getTsunamisByYear = (year) => {
 
 export const getVolcanoesByYear = (year) => {
   return async (dispatch) => {
+    /*need to add try catch in order to deal with failed fetch calls*/
     var data = await obtainData(strings.volcanoes_path + year.toString());
     dispatch({
       type: 'SET_VOLCANO_DATA',
@@ -97,6 +100,7 @@ export const getVolcanoesByYear = (year) => {
 
 export const getTornadoesByYear = (year) => {
   return async (dispatch) => {
+    /*need to add try catch in order to deal with failed fetch calls*/
     var data = await obtainData(strings.tornadoes_path + year.toString());
     dispatch({
       type: 'SET_TORNADO_DATA',
