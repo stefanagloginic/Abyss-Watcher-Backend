@@ -1,0 +1,155 @@
+.bm-burger-button {
+	position: fixed;
+	width: 36px;
+	height: 30px;
+	top: 2.5em;
+	left: 2.5em;
+}
+
+.right .bm-burger-button {
+	left: initial;
+	right: 36px;
+}
+
+.bm-burger-bars {
+	background: #cecece;
+}
+
+.bm-morph-shape {
+	fill: #cecece;
+}
+
+.bm-cross {
+	background: #999;
+}
+
+.bm-cross-button {
+	height: 24px;
+	width: 24px;
+}
+
+.bm-menu {
+	padding: 3.4em 1em 0;
+}
+
+
+
+/*Change the color of the Menu*/
+.bm-menu {
+	background: #373a47;
+	padding: 0;
+}
+
+.open-menu-fab {
+	z-index: 1000;
+	position: fixed;
+	top: 2.5em;
+	left: 2.5em;
+}
+
+.bm-cross {
+	background: #7db4d1;
+}
+
+.menu-logo {
+	box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+	padding: 3rem 0;
+}
+
+.logo-wrapper {
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-wrapper > h2 {
+	font-weight: 500;
+    font-size: 2.2rem;
+    color: #7db4d1;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.WatcherLogo {
+	height: 4rem;
+	width: 4rem;
+}
+
+.WatcherLogo > g > #path0 {
+    fill: #7db4d1;
+    stroke-width: 0.12rem;
+    stroke: #7db4d1;
+}
+
+.WatcherLogo > g > #path1 {
+	fill: #373a47;
+}
+
+.WatcherLogo > g > #path2 {
+	fill: transparent;
+	stroke: #7db4d1;
+    stroke-width: 0.12rem;
+}
+a {
+	text-decoration: none;
+}
+
+.option-wrapper {
+	padding: 1rem;
+	text-transform: uppercase;
+	transition: background 0.3s, box-shadow 0.3s;
+	color: #7db4d1;
+  	text-align: start;
+  	display: flex;
+  	align-items: center;
+  	cursor:pointer;
+}
+
+.links-wrapper {
+	transition: background 0.3s, box-shadow 0.3s;
+  	display: flex;
+  	cursor: pointer;
+	flex-direction: column;
+}
+
+.link {
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+  	text-align: start;
+  	padding: 1rem;
+  	color: #7db4d1;
+}
+
+.option-wrapper:hover,
+.option-wrapper:focus,
+.link:hover,
+.link:focus {
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 -1px rgba(0, 0, 0, 0);
+	color: #e52b50;
+}
+
+.option-wrapper > span, .link-span {
+	font-weight: 300;
+	font-size: 1.1rem;
+	margin-left: 0.5rem;
+}
+
+.bottom-link {
+	box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+}
+
+input[type="checkbox"] {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    vertical-align:middle;
+    cursor:pointer;
+    margin-left: auto;
+}
+
+input[type="checkbox"]:checked {
+   
+}
