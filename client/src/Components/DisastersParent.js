@@ -234,6 +234,8 @@ class DisastersParent extends Component {
 	}
 
 	getPlottedNaturalDisasters = () => {
+		// console.log(this.props.selectionData);
+
     	return Object.values(this.props.selectionData).filter(function(NDObj) {
     		if(NDObj.type && NDObj.visible) {
     			return NDObj;
