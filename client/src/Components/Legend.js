@@ -17,7 +17,7 @@ class Legend extends Component {
 	}
 
 	getProps = () => {
-		const { plottedND, disastersConfig } = this.props;
+		const { plottedND } = this.props;
 		this.plottedND = plottedND;
 	}
 
