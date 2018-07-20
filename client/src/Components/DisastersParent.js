@@ -257,7 +257,7 @@ class DisastersParent extends Component {
 			<div className="map_wrapper">
 				<DataCommunication />
 				<IconButton link="/graphs" label="Graphs" icon={<GraphIcon size={65} />} />
-				<Legend plottedND={ this.getPlottedNaturalDisasters() } />
+				<Legend plottedND={ this.getPlottedNaturalDisasters() } disastersConfig={ this.props.disastersConfig } />
 				<svg 
 					className="map_svg" 
 					ref={node => this.node = node} 
@@ -272,7 +272,8 @@ class DisastersParent extends Component {
 const mapStateToProps = (state) => {
 	return {
 		selectionData: state.menuOptions,
-		disastersData: state.disastersData
+		disastersData: state.disastersData,
+		disastersConfig: state.config
 	}
 }
 
